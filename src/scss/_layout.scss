@@ -1,0 +1,63 @@
+#root {
+  height: 100vh;
+
+  .app {
+    background: lightgray;
+    padding: 1em;
+    display: flex;
+
+    .pads {
+      //background: red;
+      width: 320px;
+      display: flex;
+      flex-wrap: wrap;
+      .pad {
+        background: gray;
+        width: 100px;
+        height: 100px;
+        margin: 2px;
+      }
+    }
+
+    .dashboard {
+      padding: 2em;
+      flex-direction: column;
+
+      .power__wrapper {
+        width: 50px;
+        height: 20px;
+        background: white;
+        padding: 2px;
+
+        .power__button {
+          display: block;
+          width: 30px;
+          height: 100%;
+          background: blue;
+          color: white;
+          font-size: 0.7rem;
+          transform: translateX(15px);
+          transition: all 200ms ease-in-out;
+
+          &.slide__button {
+            background: red;
+            transform: translateX(0);
+          }
+        }
+      }
+
+      .display__wrapper {
+        width: 120px;
+        height: 30px;
+        background: orange;
+        color: white;
+        margin: 2em 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+
+      .volume__wrapper {
+      }
+    }
+  }
+}
